@@ -11,7 +11,7 @@ pipeline {
 
         NEXUS_HOST = "nexus:8082"
         NEXUS_URL = "http://nexus:8082"
-        NEXUS_REPO = "myrepo"
+        NEXUS_REPO = "mydocker"
         CREDENTIALS_ID = "nexus-credentials"
 
         FULL_IMAGE_NAME = "${NEXUS_HOST}/${IMAGE_NAME}:${IMAGE_TAG}"
