@@ -9,8 +9,8 @@ pipeline {
         IMAGE_NAME = "sumador"
         IMAGE_TAG = "${env.BUILD_NUMBER}"
 
-        NEXUS_HOST = "proyectito-devsecops-nexus-1:8082"
-        NEXUS_URL = "http://proyectito-devsecops-nexus-1:8082"
+        NEXUS_HOST = "localhost:8082"
+        NEXUS_URL = "http://localhost:8082"
         NEXUS_REPO = "mydocker"
         CREDENTIALS_ID = "nexus-credentials"
 
