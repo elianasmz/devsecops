@@ -60,7 +60,7 @@ pipeline {
         stage('Push Image to Nexus') {
             steps {
                 withCredentials([usernamePassword(
-                    credentialsId: "${CREDENTIALS_ID}",
+                    credentialsId: 'nexus-credentials',
                     usernameVariable: 'NEXUS_USERNAME',
                     passwordVariable: 'NEXUS_PASSWORD'
                 )]) {
