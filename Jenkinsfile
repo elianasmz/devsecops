@@ -32,7 +32,9 @@ pipeline {
 
         stage('Dependency Scan - npm audit') {
             steps {
-                sh 'npm audit --audit-level=critical'
+                
+                sh 'docker run --rm ${IMAGE_NAME}:${IMAGE_TAG} npm audit --audit-level=critical'
+
             }
         }
 
